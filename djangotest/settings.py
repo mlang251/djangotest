@@ -29,8 +29,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
-
 DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,6 +43,8 @@ THIRD_PARTY_APPS = []
 LOCAL_APPS = [
     'myapp',
 ]
+
+INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
